@@ -2,7 +2,11 @@
 
 Clean, modern Cypress (v10+) BDD framework in JavaScript that exercises SauceDemo’s UI and a public JSONPlaceholder API. Uses Cucumber/Gherkin, Page Object Model, custom commands, and Mochawesome HTML reporting. A screen recording (placeholder below) walks through local execution and opening the Mochawesome report in a browser.  
 
-Recording: _[placeholder link – add video]_
+Recording:
+
+https://github.com/user-attachments/assets/a8739992-f755-422e-befa-1687df497821
+
+
 
 ## Highlights for recruiters
 - Full UI + API automated testing framework with scalable structure and clear separation of concerns.
