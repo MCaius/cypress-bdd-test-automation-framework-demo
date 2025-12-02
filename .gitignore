@@ -1,0 +1,42 @@
+# Node dependencies and build artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+*.tsbuildinfo
+dist/
+build/
+tmp/
+temp/
+
+# Coverage output
+coverage/
+.nyc_output/
+
+# Cypress artifacts
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+
+# Environment files (kept visible for demo)
+# In real projects, .env should NOT be committed.
+# For this demo we keep it visible so reviewers can run tests easily.
+# .env
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux system files
+*~
+.nfs*

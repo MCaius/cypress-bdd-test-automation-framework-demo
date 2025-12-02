@@ -1,0 +1,25 @@
+{
+  "name": "cypress-bdd-test-automation-framework-demo",
+  "version": "1.0.0",
+  "description": "Cypress BDD demo for SauceDemo with Cucumber and Mochawesome reporting",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test:run": "cypress run",
+    "test:ui": "cypress run --spec 'cypress/e2e/ui/**/*.feature'",
+    "test:api": "cypress run --spec 'cypress/e2e/api/**/*.feature'",
+    "test:ci": "cypress run --browser chrome --headless",
+    "report:open": "open -a \"Google Chrome\" $(ls -t cypress/reports/*-report.html | head -n 1)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7",
+    "cypress": "^15.7.0",
+    "cypress-mochawesome-reporter": "^3.8.4",
+    "dotenv": "^17.2.3"
+  }
+}
