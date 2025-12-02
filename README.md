@@ -6,9 +6,12 @@ Recording:
 
 https://github.com/user-attachments/assets/a8739992-f755-422e-befa-1687df497821
 
+Mochawesome Report Preview:
+
+![Mochawesome Report Preview](https://github.com/user-attachments/assets/0394eb43-fd0e-4376-8263-4772bd3bb251)
 
 
-## Highlights for recruiters
+## Quick Highlights
 - Full UI + API automated testing framework with scalable structure and clear separation of concerns.
 - BDD with Cucumber/Gherkin plus Page Object Model for readable, maintainable scenarios.
 - Custom Cypress commands and a reusable API client abstraction to centralize behaviors.
@@ -17,6 +20,47 @@ https://github.com/user-attachments/assets/a8739992-f755-422e-befa-1687df497821
 
 ## Note on `.env`
 In real production work, `.env` must never be committed. For this demo, keeping `.env` visible lets reviewers run tests immediately without extra setup.
+
+## Project Structure Overview
+
+A clean, scalable structure that separates UI, API, steps, pages, fixtures, and support layers.
+```
+cypress/
+  e2e/
+    api/
+      jsonplaceholder.feature        # API BDD scenarios
+    ui/
+      login.feature                  # Login UI scenarios
+      cart.feature                   # Cart & shopping journey scenarios
+    step_definitions/
+      api/                           # API step definitions
+        jsonplaceholder.steps.js
+      ui/                            # UI step definitions
+        login.steps.js
+        cart.steps.js
+  fixtures/
+    testData.json                    # Product test data
+  pages/
+    BasePage.js                      # Shared base actions
+    LoginPage.js                     # Login screen POM
+    InventoryPage.js                 # Inventory/catalog POM
+    CartPage.js                      # Cart view POM
+  support/
+    apiClient.js                     # Reusable API client wrapper
+    commands.js                      # Custom Cypress commands
+    e2e.js                           # Global hooks and registrations
+  reports/
+    videos/                          # Videos generated during run
+    *.html                           # Mochawesome reports
+
+.env                                  # Demo-friendly (for real use, do NOT commit)
+cypress.config.js                     # Framework configuration
+package.json                          # Scripts + dependencies
+README.md                             # Project documentation
+
+```
+
+
 
 ## Technical Overview
 - Project layout:  
